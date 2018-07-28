@@ -1,8 +1,14 @@
 # Satellite-Image-Segmentation-Using-U-NET
+
+**Code for MULTISPECTRAL GEOSPATIAL FEATURE EXTRACTION USING THE U-NET DEEP LEARNING ARCHITECTURE**  
+**BY**
+**Alex Mathai(BITS PILANI),**
+**A. K. Jha(IIRS),**
+**Sameer Saran(IIRS)**
+
 The scripts of a 2 month project at the Indian Space Research Organisation,Dehradun. The scripts contain code for a U-Net model for Satellite Image Segmentation. 
 
-The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK. The model given in the scripts
-will work for the road and water categories.
+The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK. The model given in the scripts will work for the road and water categories.
 
 **Step 1 :**
 Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data. After accepting all terms and
