@@ -49,7 +49,7 @@ To test the U-Net model on the test images, run "python test_roads.py"
 In the Data_masks/Fast_H20 folder segregate the pictures into training and testing. Place "6070_2_3_Fast_H20.tif" in the Data_masks/Fast_H20/Test
 folder and keep "6100_2_2_Fast_H20.tif" as is.Delete the rest as all other images do not have large water bodies in them.
 
-Now run "create_dataset_for_fast_h20.py"
+Now run "python create_dataset_for_fast_h20.py"
 
 **Step 6:**
 To train the U-Net model to detect tarred roads, run "python train_h20.py"
