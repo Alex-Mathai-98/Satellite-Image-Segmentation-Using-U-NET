@@ -4,23 +4,23 @@
 # TL;DR
 This project contains scripts of a 3 month project at the Indian Space Research Organisation, Dehradun. This script contains code for a U-Net deep learning model for segmentation of roads and water bodies in high-resolution satellite images. 
 
-# Replicating the Environment
+# Environment
 To easily replicate my environment, please clone the **isro.yml** file using **Conda**.
 
 # Data
 The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK. 
 
-## Explanation (Optional)
+### Explanation (Optional)
 Most images that we capture on phones are made of 3-Bands - red, green and blue (RGB). However satellite images have multiple bands. The data in this competition had 20 bands. 
 
 1. Panchromatic (Black and White) as well as RGB Bands. Often known as PRGB.
 2. M-Spectrum (A collection of 8 bands from Coastal Blue to Near-Infrared 2)
 3. A-Spectrum (A collection of 8 more bands) 
 
-## Step 1
+### Step 1
 Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data, after accepting all terms and conditions.
 
-## Step 2
+### Step 2
 Extract the data in the "three_band.zip" into the Data/three_band folder.
 Extract the data in the "sixteen_band.zip" into the  Data/sixteen_band folders.
 Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the Data folder.
