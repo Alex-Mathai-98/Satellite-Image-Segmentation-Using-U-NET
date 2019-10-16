@@ -30,7 +30,7 @@ Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the D
 
 # Preprocessing
 Navigate to the main folder where all the scripts exist. 
-And run the commands given below. If interested in understanding each process, please see deta
+And run the commands given below. If interested in understanding each process, please read through the optional explainations.
 
 ## Resizing and Panchromatic Sharpening of Images
 
@@ -54,19 +54,29 @@ python bands_stack_creator.py
 python mask_creator.py
 ```
 
-// For Roads //
+# Segmenting Roads 
+You can either use my **pretrained weights and models** to predict the tarred roads and the deep water bodies or **train from scratch**.
 
-**Step 5:**
+## Train from Scratch 
 In the Data_masks/Road folder segregate the pictures into training and testing. Place "6100_2_2_Road.tif" and "6140_3_1_Road.tif" 
-in the test folder and keep "6070_2_3_Road.tif", "6100_1_3_Road.tif", "6100_2_3_Road.tif", "6110_1_2_Road.tif", "6110_3_1_Road.tif", "6110_4_0_Road.tif", "6120_2_2_Road.tif" and "6140_1_2_Road.tif" as is. Delete the rest as all other images do not have roads in them.
+in the test folder. Now delete all the other images except for "6070_2_3_Road.tif", "6100_1_3_Road.tif", "6100_2_3_Road.tif", "6110_1_2_Road.tif", "6110_3_1_Road.tif", "6110_4_0_Road.tif", "6120_2_2_Road.tif" and "6140_1_2_Road.tif" as they are the only images that have roads in them.
 
-Now run "python create_dataset_for_roads.py"
+## Run Commands (Essential)
 
-**Step 6:**
-To train the U-Net model to detect tarred roads, run "python train_road_tar.py"
+To create a train-dataset run the below command.
+```python
+python create_dataset_for_roads.py
+```
 
-**Step 7:**
-To test the U-Net model on the test images, run "python test_roads.py"
+To train the U-Net model to detect tarred roads, run the below command.
+```python
+python train_road_tar.py
+```
+
+To test the U-Net model on the test images, run the below command.
+```python
+python test_roads.py
+```
 
 // For Water //
 
