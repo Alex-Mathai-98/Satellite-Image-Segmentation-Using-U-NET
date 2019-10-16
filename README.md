@@ -79,15 +79,15 @@ To test the U-Net model on the test images, run the below command.
 python test_roads.py
 ```
 
-### Use Pre-trained Weights
-Download my pretrained weights from this link.
+## Use Pre-trained Weights
+Download my pretrained weights from this link. Place the weights here.
 
 To test the U-Net model on the test images, run the below command.
 ```python
 python test_roads.py
 ```
 
-### Results from Pre-trained Weights
+## Results from Pre-trained Weights
 
 
 # Segmenting Water bodies
@@ -116,15 +116,15 @@ To test the ensemble model on the test images run the below command.
  python test_h20.py
 ```
 
-### Use Pre-trained Weights
-Download my pretrained weights from this link.
+## Use Pre-trained Weights
+Download my pretrained weights from this link. Place the weights here.
 
 To test the ensemble model on the test images run the below command.
 ```python
  python test_h20.py
 ```
 
-### Results from Pre-trained Weights
+## Results from Pre-trained Weights
 
 
 
