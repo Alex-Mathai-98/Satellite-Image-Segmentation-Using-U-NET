@@ -22,9 +22,15 @@ Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the D
 Navigate to the main folder where all the scripts exist. And run the commands given below.
 
 ### Pansharpening Images
-1. "python pan_sharpen_M.py"
-2. "python pan_sharpen_RGB.py"
-3. "python bands_stack_creator.py"
+```python
+"python pan_sharpen_M.py"
+```
+```python
+"python pan_sharpen_RGB.py"
+```
+```python
+"python bands_stack_creator.py"
+```
 4. "python mask_creator.py"
 
 // For Roads //
