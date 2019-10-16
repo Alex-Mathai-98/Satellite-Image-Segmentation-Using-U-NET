@@ -1,18 +1,14 @@
-# Satellite-Image-Segmentation-Using-U-NET
+# Satellite Image Segmentation Using the U-Net Deep Learning Architecture
+**Alex Mathai(BITS Pilani), Ashutosh Kumar Jha(ISRO), Sameer Saran(ISRO)**
 
-**Code for MULTISPECTRAL GEOSPATIAL FEATURE EXTRACTION USING THE U-NET DEEP LEARNING ARCHITECTURE**  
-**BY**
-**Alex Mathai(BITS PILANI),**
-**A. K. Jha(IIRS),**
-**Sameer Saran(IIRS)**
+## TL;DR
+This project contains scripts of a 3 month project at the Indian Space Research Organisation, Dehradun. This script contains code for a U-Net deep learning model for segmentation of roads and water bodies in high-resolution satellite images. 
 
-The scripts of a 2 month project at the Indian Space Research Organisation,Dehradun. The scripts contain code for a U-Net model for Satellite Image Segmentation. 
+## Replicating the Environment
+To easily replicate my environment, please clone the **isro.yml** file using **Conda**.
 
-The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK. The model given in the scripts will work for the road and water categories.
-
-**Step 1 :**
-Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data. After accepting all terms and
-conditions.
+## Data
+The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK. The model given in the scripts will work for the road and water categories. Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data. After accepting all terms and conditions.
 
 **Step 2:**
 Place the data inside "three_band.zip", "sixteen_band.zip" in the Data/three_band and Data/sixteen_band folders. Extract
