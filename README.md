@@ -48,8 +48,9 @@ python pan_sharpen_RGB.py
 python bands_stack_creator.py
 ```
 
-# Ground truth binary masks for images
-## Run Commands (Essential)
+## Ground truth binary masks for images
+
+### Run Commands (Essential)
 ```python
 python mask_creator.py
 ```
