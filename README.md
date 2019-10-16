@@ -17,13 +17,11 @@ Most images that we capture on phones are made of 3-Bands - red, green and blue 
 2. M-Spectrum (A collection of 8 bands from Coastal Blue to Near-Infrared 2)
 3. A-Spectrum (A collection of 8 more bands) 
 
-### Step 1
-Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data, after accepting all terms and conditions.
-
-### Step 2
-Extract the data in the "three_band.zip" into the Data/three_band folder.
-Extract the data in the "sixteen_band.zip" into the  Data/sixteen_band folders.
-Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the Data folder.
+### Steps (Essential)
+1. Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data, after accepting all terms and conditions.
+2. Extract the data in the "three_band.zip" into the Data/three_band folder.
+3. Extract the data in the "sixteen_band.zip" into the  Data/sixteen_band folders.
+4. Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the Data folder.
 
 # Project Flow Chart
 ![Flow Chart](/Images/project_flow_chart.png)
