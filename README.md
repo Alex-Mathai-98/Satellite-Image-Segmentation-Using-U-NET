@@ -32,22 +32,27 @@ Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the D
 Navigate to the main folder where all the scripts exist. 
 And run the commands given below. If interested in understanding each process, please see deta
 
-## Resizing and Pansharpening of Images
+## Resizing and Panchromatic Sharpening of Images
 
-### Explanation (Optional)
-Because there are 20 bands being used, the sizes of the image of the same location are different across different bands. The M-Spectrum and the A-Spectrum are smaller than the Panchromatic and RGB. Hence both the A and M Spectrums are resized to the size of the 
+## Explanation (Optional)
+Because there are 20 bands being used, the sizes of the image of the same location are different across different bands. The M-Spectrum and the A-Spectrum are smaller than the PRGB. Hence both the A and M Spectrums are resized to the size of PRGB. This causes alignment issues. For example, the starting and the ending of roads did not exactly coincide for the resized bands and the PRGB. Hence bringing alignment was necessary. This is done through a process called **Panchromatic Sharpening**.
 
-
+## Run Commands (Essential)
 ```python
-"python pan_sharpen_M.py"
+python pan_sharpen_M.py
 ```
 ```python
-"python pan_sharpen_RGB.py"
+python pan_sharpen_RGB.py
 ```
 ```python
-"python bands_stack_creator.py"
+python bands_stack_creator.py
 ```
-4. "python mask_creator.py"
+
+# Ground truth binary masks for images
+## Run Commands (Essential)
+```python
+python mask_creator.py
+```
 
 // For Roads //
 
