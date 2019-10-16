@@ -1,5 +1,5 @@
 # Satellite Image Segmentation Using the U-Net Deep Learning Architecture
-**Alex Mathai(BITS Pilani), Ashutosh Kumar Jha(ISRO), Sameer Saran(ISRO)**
+<p align="center"> **Alex Mathai(BITS Pilani) | Ashutosh Kumar Jha(ISRO) | Sameer Saran(ISRO)** </p>
 
 # TL;DR
 This project contains scripts of a 3 month project at the Indian Space Research Organisation, Dehradun. This script contains code for a U-Net deep learning model for segmentation of roads and water bodies in high-resolution satellite images. 
