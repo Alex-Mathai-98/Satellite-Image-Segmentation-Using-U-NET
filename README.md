@@ -7,7 +7,7 @@ This project contains scripts of a 3 month project at the Indian Space Research 
 # Replicating the Environment
 To easily replicate my environment, please clone the **isro.yml** file using **Conda**.
 
-## Data
+# Data
 The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK.
 
 ### Step 1
@@ -18,10 +18,15 @@ Extract the data in the "three_band.zip" into the Data/three_band folder.
 Extract the data in the "sixteen_band.zip" into the  Data/sixteen_band folders.
 Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the Data folder.
 
-## Preprocessing
+# Project Flow Chart
+![Flow Chart](/images/project_flow_chart.png)
+
+# Preprocessing
 Navigate to the main folder where all the scripts exist. And run the commands given below.
 
-### Pansharpening Images
+## Pansharpening Images
+
+
 ```python
 "python pan_sharpen_M.py"
 ```
