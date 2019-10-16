@@ -11,11 +11,11 @@ To easily replicate my environment, please clone the **isro.yml** file using **C
 The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK. 
 
 ### Explanation (Optional)
-Most images that we capture on phones are made of 3-Bands - red, green and blue (RGB). However satellite images have multiple bands. The data in this competition had 20 bands. 
+Most images that we capture on phones are made of 3-Bands - red, green and blue (RGB). However satellite images have multiple bands. The data in this competition had 20 bands divided into three categories. 
 
-1. Panchromatic (Black and White) as well as RGB Bands. Often known as PRGB.
-2. M-Spectrum (A collection of 8 bands from Coastal Blue to Near-Infrared 2)
-3. A-Spectrum (A collection of 8 more bands) 
+1. **GROUP I** : Panchromatic (Black and White) as well as RGB Bands. Often known as PRGB.
+2. **GROUP II** : M-Spectrum (A collection of 8 bands from Coastal Blue to Near-Infrared 2)
+3. **GROUP III** : A-Spectrum (A collection of 8 more bands) 
 
 ### Steps (Essential)
 1. Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data, after accepting all terms and conditions.
@@ -33,7 +33,11 @@ And run the commands given below. If interested in understanding each process, p
 ## Resizing and Panchromatic Sharpening of Images
 
 ### Explanation (Optional)
-Because there are 20 bands being used, the sizes of the image of the same location are different across different bands. The M-Spectrum and the A-Spectrum are smaller than the PRGB. Hence both the A and M Spectrums are resized to the size of PRGB. This causes alignment issues. For example, the starting and the ending of roads did not exactly coincide for the resized bands and the PRGB. Hence bringing alignment was necessary. This is done through a process called **Panchromatic Sharpening**.
+The 20 bands span a huge range of the electromagnetic spectrum. Because of this, if we were to compare the sizes of the image of a particular location across the 3 groups, they would vary drastically. **GROUP III** is the smallest, then comes **GROUP II** and lastly **GROUP III**.
+
+As deep learning models expect a fixed size input, we would need to resize **GROUP III** and **GROUP II** to the size of **GROUP I**. **GROUP III** being the smallest, suffers a drastic drop in image quality while resizing. Hence **GROUP III** was left out. 
+
+**GROUP II** can be resized successfully but suffers from alignment issues. For example, the starting and the ending of roads did not exactly coincide for the resized **GROUP II** bands and the PRGB. Hence bringing alignment was necessary. This is done through a process called **Panchromatic Sharpening**.
 
 ### Run Commands (Essential)
 ```python
