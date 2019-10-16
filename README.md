@@ -34,10 +34,10 @@ And run the commands given below. If interested in understanding each process, p
 
 ## Resizing and Panchromatic Sharpening of Images
 
-## Explanation (Optional)
+### Explanation (Optional)
 Because there are 20 bands being used, the sizes of the image of the same location are different across different bands. The M-Spectrum and the A-Spectrum are smaller than the PRGB. Hence both the A and M Spectrums are resized to the size of PRGB. This causes alignment issues. For example, the starting and the ending of roads did not exactly coincide for the resized bands and the PRGB. Hence bringing alignment was necessary. This is done through a process called **Panchromatic Sharpening**.
 
-## Run Commands (Essential)
+### Run Commands (Essential)
 ```python
 python pan_sharpen_M.py
 ```
@@ -54,14 +54,16 @@ python bands_stack_creator.py
 python mask_creator.py
 ```
 
-# Segmenting Roads 
+# Segmenting Roads
 You can either use my **pretrained weights and models** to predict the tarred roads and the deep water bodies or **train from scratch**.
+
+## Architecture
 
 ## Train from Scratch 
 In the Data_masks/Road folder segregate the pictures into training and testing. Place "6100_2_2_Road.tif" and "6140_3_1_Road.tif" 
 in the test folder. Now delete all the other images except for "6070_2_3_Road.tif", "6100_1_3_Road.tif", "6100_2_3_Road.tif", "6110_1_2_Road.tif", "6110_3_1_Road.tif", "6110_4_0_Road.tif", "6120_2_2_Road.tif" and "6140_1_2_Road.tif" as they are the only images that have roads in them.
 
-## Run Commands (Essential)
+### Run Commands (Essential)
 
 To create a train-dataset run the below command.
 ```python
@@ -78,13 +80,32 @@ To test the U-Net model on the test images, run the below command.
 python test_roads.py
 ```
 
-// For Water //
+### Use Pre-trained Weights
+Download my pretrained weights from this link.
 
-**Step 5:**
+To test the U-Net model on the test images, run the below command.
+```python
+python test_roads.py
+```
+
+### Results from Pre-trained Weights
+
+
+# Segmenting Water bodies
+
+## Architecture
+Because of the lack of data for water bodies, deep learning models would converge on training. Hence we resorted to using machine learning models.
+
+## Train from Scratch
 In the Data_masks/Fast_H20 folder segregate the pictures into training and testing. Place "6070_2_3_Fast_H20.tif" in the Data_masks/Fast_H20/Test
 folder and keep "6100_2_2_Fast_H20.tif" as is.Delete the rest as all other images do not have large water bodies in them.
 
-Now run "python create_dataset_for_fast_h20.py"
+### Run Commands (Essential)
+
+To create a train-dataset run the below command.
+```python
+python create_dataset_for_fast_h20.py
+```
 
 **Step 6:**
 To train the U-Net model to detect tarred roads, run "python train_h20.py"
