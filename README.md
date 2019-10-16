@@ -8,18 +8,20 @@ This project contains scripts of a 3 month project at the Indian Space Research 
 To easily replicate my environment, please clone the **isro.yml** file using **Conda**.
 
 ## Data
-The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK. The model given in the scripts will work for the road and water categories. Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data. After accepting all terms and conditions.
+The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK.
 
-**Step 2:**
-Place the data inside "three_band.zip", "sixteen_band.zip" in the Data/three_band and Data/sixteen_band folders. Extract
-"grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the Data folder.
+### Step 1
+Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data, after accepting all terms and conditions.
 
-**Step 3:**
-Create a conda environment using the "isro.yml" file and activate that environment.
+### Step 2
+Extract the data in the "three_band.zip" into the Data/three_band folder.
+Extract the data in the "sixteen_band.zip" into the  Data/sixteen_band folders.
+Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the Data folder.
 
-**Step 4:**
-Navigate to the main folder where all the scripts exist. Now run the following commands from the terminal.
+## Preprocessing
+Navigate to the main folder where all the scripts exist. And run the commands given below.
 
+### Pansharpening Images
 1. "python pan_sharpen_M.py"
 2. "python pan_sharpen_RGB.py"
 3. "python bands_stack_creator.py"
