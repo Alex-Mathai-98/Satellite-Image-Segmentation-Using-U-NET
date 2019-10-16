@@ -8,12 +8,19 @@ This project contains scripts of a 3 month project at the Indian Space Research 
 To easily replicate my environment, please clone the **isro.yml** file using **Conda**.
 
 # Data
-The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK.
+The data for this project has been taken from the Kaggle competition "Can you train an eye in the sky ?", DSTL UK. 
 
-### Step 1
+## Explanation (Optional)
+Most images that we capture on phones are made of 3-Bands - red, green and blue (RGB). However satellite images have multiple bands. The data in this competition had 20 bands. 
+
+1. Panchromatic (Black and White) as well as RGB Bands. Often known as PRGB.
+2. M-Spectrum (A collection of 8 bands from Coastal Blue to Near-Infrared 2)
+3. A-Spectrum (A collection of 8 more bands) 
+
+## Step 1
 Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data, after accepting all terms and conditions.
 
-### Step 2
+## Step 2
 Extract the data in the "three_band.zip" into the Data/three_band folder.
 Extract the data in the "sixteen_band.zip" into the  Data/sixteen_band folders.
 Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the Data folder.
@@ -22,9 +29,13 @@ Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the D
 ![Flow Chart](/Images/project_flow_chart.png)
 
 # Preprocessing
-Navigate to the main folder where all the scripts exist. And run the commands given below.
+Navigate to the main folder where all the scripts exist. 
+And run the commands given below. If interested in understanding each process, please see deta
 
-## Pansharpening Images
+## Resizing and Pansharpening of Images
+
+### Explanation (Optional)
+Because there are 20 bands being used, the sizes of the image of the same location are different across different bands. The M-Spectrum and the A-Spectrum are smaller than the Panchromatic and RGB. Hence both the A and M Spectrums are resized to the size of the 
 
 
 ```python
