@@ -33,7 +33,7 @@ And run the commands given below. If interested in understanding each process, p
 ## Resizing and Panchromatic Sharpening of Images
 
 ### Explanation (Optional)
-The 20 bands span a huge range of the electromagnetic spectrum. Because of this, if we were to compare the sizes of the image of a particular location across the 3 groups, they would vary drastically. **GROUP III** is the smallest, then comes **GROUP II** and lastly **GROUP III**.
+The 20 bands span a huge range of the electromagnetic spectrum. Because of this, if we were to compare the sizes of the image of a particular location across the 3 groups, they would vary drastically. **GROUP III** is the smallest, then comes **GROUP II** and the largest is **GROUP I**.
 
 As deep learning models expect a fixed size input, we would need to resize **GROUP III** and **GROUP II** to the size of **GROUP I**. **GROUP III** being the smallest, suffers a drastic drop in image quality while resizing. Hence **GROUP III** was left out. 
 
@@ -52,15 +52,19 @@ python bands_stack_creator.py
 
 ## Ground truth binary masks for images
 
+### Explanation (Optional)
+Although the original task was a multi-class prediction problem, we break this multiclass problem into individual binary-prediction problems. For example Road and Not-Road, Water and Not-Water.
+
 ### Run Commands (Essential)
 ```python
 python mask_creator.py
 ```
 
 # Segmenting Roads
-You can either use my **pretrained weights and models** to predict the tarred roads and the deep water bodies or **train from scratch**.
+You can either use my **Pretrained Weights** to predict tarred roads from satellite images or you can **train from scratch**.
 
 ## Architecture
+![U-Net](/Images/U_Net.png)
 
 ## Train from Scratch 
 In the Data_masks/Road folder segregate the pictures into training and testing. Place "6100_2_2_Road.tif" and "6140_3_1_Road.tif" 
