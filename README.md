@@ -94,7 +94,7 @@ python test_roads.py
 # Segmenting Water bodies
 
 ## Architecture
-Because of the lack of data for water bodies, deep learning models would converge on training. Hence we resorted to using machine learning models.
+Because of the lack of data for water bodies, deep learning models would not converge on training. Hence we resorted to using an ensemble of machine learning models.
 
 ## Train from Scratch
 In the Data_masks/Fast_H20 folder segregate the pictures into training and testing. Place "6070_2_3_Fast_H20.tif" in the Data_masks/Fast_H20/Test
@@ -107,14 +107,25 @@ To create a train-dataset run the below command.
 python create_dataset_for_fast_h20.py
 ```
 
-**Step 6:**
-To train the U-Net model to detect tarred roads, run "python train_h20.py"
+To train the ensemble in detecting deepwater bodies run the below command.
+```python
+python train_h20.py
+```
 
-**Step 7:**
-To test the U-Net model on the test images, run "python test_h20.py"
+To test the ensemble model on the test images run the below command.
+```python
+ python test_h20.py
+```
 
+### Use Pre-trained Weights
+Download my pretrained weights from this link.
 
+To test the ensemble model on the test images run the below command.
+```python
+ python test_h20.py
+```
 
+### Results from Pre-trained Weights
 
 
 
