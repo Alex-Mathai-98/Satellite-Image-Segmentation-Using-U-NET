@@ -19,7 +19,7 @@ Extract the data in the "sixteen_band.zip" into the  Data/sixteen_band folders.
 Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the Data folder.
 
 # Project Flow Chart
-![Flow Chart](/images/project_flow_chart.png)
+![Flow Chart](/Images/project_flow_chart.png)
 
 # Preprocessing
 Navigate to the main folder where all the scripts exist. And run the commands given below.
