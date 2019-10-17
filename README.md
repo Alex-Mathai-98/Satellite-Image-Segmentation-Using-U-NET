@@ -152,8 +152,12 @@ To test the ensemble model on the test images run the below command.
 ```
 
 ## Results from Pre-trained Weights
+We measure our performance by the **Jaccard Metric**. For water bodies, we achieve a high Jaccard score of **0.7**.
 
-
+<p align="middle">
+  <img src="/Images/Water_Input.png" width="350" hspace="50" />
+  <img src="/Images/Water_Output.png" width="350" /> 
+</p>
 
 
 
