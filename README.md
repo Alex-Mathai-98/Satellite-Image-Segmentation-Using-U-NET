@@ -99,7 +99,7 @@ python test_roads.py
 ```
 
 ## Use Pre-trained Weights
-Download my pretrained weights from this [link](https://drive.google.com/drive/folders/1YGMZVCRn5UVlQL3V-MTwT4QHtI7HJJSX?usp=sharing). Place the weights in the ```Parameters/Road_tar``` folder. Please modify the first line of the ```checkpoint``` file so that your my absolute path is replaced by your absolute path.
+Download my pretrained weights from this [link](https://drive.google.com/drive/folders/1YGMZVCRn5UVlQL3V-MTwT4QHtI7HJJSX?usp=sharing). Place the weights in the ```Parameters/Road_tar``` folder. Please modify the first line of the ```checkpoint``` file so that my absolute path is replaced by your absolute path.
 
 To test the U-Net model on the test images, run the below command.
 ```python
