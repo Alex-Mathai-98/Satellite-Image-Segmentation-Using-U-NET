@@ -97,7 +97,7 @@ python test_roads.py
 ```
 
 ## Use Pre-trained Weights
-Download my pretrained weights from this link. Place the weights here.
+Download my pretrained weights from this [link](https://drive.google.com/drive/folders/1YGMZVCRn5UVlQL3V-MTwT4QHtI7HJJSX?usp=sharing). Place the weights here.
 
 To test the U-Net model on the test images, run the below command.
 ```python
@@ -114,7 +114,7 @@ Because of the lack of data for water bodies, deep learning models would not con
 
 ## Train from Scratch
 In the Data_masks/Fast_H20 folder segregate the pictures into training and testing. Place "6070_2_3_Fast_H20.tif" in the Data_masks/Fast_H20/Test
-folder and keep "6100_2_2_Fast_H20.tif" as is.Delete the rest as all other images do not have large water bodies in them.
+folder and keep "6100_2_2_Fast_H20.tif" as is. Delete the rest, as all other images do not have large water bodies in them.
 
 ### Run Commands (Essential)
 
