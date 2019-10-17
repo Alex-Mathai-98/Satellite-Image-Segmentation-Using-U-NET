@@ -117,7 +117,7 @@ We measure our performance by the **Jaccard Metric**. For tarred roads, we achie
 Because of the lack of data for water bodies, deep learning models failed to converge on training. Hence we resorted to using an ensemble of machine learning models. 
 
 ## Architecture
-
+![Ensemble](/Images/ensemble.png)
 
 ## Train from Scratch
 In the ```Data_masks/Fast_H20``` folder segregate the pictures into training and testing. Place "6070_2_3_Fast_H20.tif" in the ```Data_masks/Fast_H20/Test```
