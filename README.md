@@ -23,7 +23,7 @@ Most images that we capture on phones are made of 3-Bands - red, green and blue 
 3. Extract the data in the "sixteen_band.zip" into the  ```Data/sixteen_band``` folders.
 4. Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the ```Data``` folder.
 
-# Project Flow Chart
+# Flow Chart
 <p align="middle">
   <img src="/Images/project_flow_chart.png" width="600" />
 </p>
@@ -78,8 +78,8 @@ concatenates (joins) the deeper layers of the right arm with the earlier layers 
 "What" and the "Where" information - two questions that are essential to image segmentation.
 
 ## Train from Scratch 
-In the ```Data_masks/Road``` folder segregate the pictures into training and testing. Place "6100_2_2_Road.tif" and "6140_3_1_Road.tif" 
-in the test folder. Now delete all the other images except for "6070_2_3_Road.tif", "6100_1_3_Road.tif", "6100_2_3_Road.tif", "6110_1_2_Road.tif", "6110_3_1_Road.tif", "6110_4_0_Road.tif", "6120_2_2_Road.tif" and "6140_1_2_Road.tif" as they are the only images that have roads in them.
+In the ```Data_masks/Road``` folder segregate the pictures into training and testing. Place ```6100_2_2_Road.tif``` and ```6140_3_1_Road.tif``` 
+in the test folder. Now delete all the other images except for ```6070_2_3_Road.tif```, ```6100_1_3_Road.tif```, ```6100_2_3_Road.tif```, ```6110_1_2_Road.tif```, ```6110_3_1_Road.tif```, ```6110_4_0_Road.tif```, ```6120_2_2_Road.tif``` and ```6140_1_2_Road.tif``` as they are the only images that have roads in them.
 
 ### Run Commands (Essential)
 
@@ -124,8 +124,7 @@ Because of the lack of data for water bodies, deep learning models failed to con
 </p>
 
 ## Train from Scratch
-In the ```Data_masks/Fast_H20``` folder segregate the pictures into training and testing. Place "6070_2_3_Fast_H20.tif" in the ```Data_masks/Fast_H20/Test```
-folder and keep "6100_2_2_Fast_H20.tif" as is. Delete the rest, as all other images do not have large water bodies in them.
+In the ```Data_masks/Fast_H20``` folder segregate the pictures into training and testing. Place ```6070_2_3_Fast_H20.tif``` in the ```Data_masks/Fast_H20/Test``` folder and keep ```6100_2_2_Fast_H20.tif``` as is. Delete the rest, as all other images do not have large water bodies in them.
 
 ### Run Commands (Essential)
 
