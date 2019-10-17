@@ -19,9 +19,9 @@ Most images that we capture on phones are made of 3-Bands - red, green and blue 
 
 ### Steps (Essential)
 1. Download all data from https://www.kaggle.com/c/dstl-satellite-imagery-feature-detection/data, after accepting all terms and conditions.
-2. Extract the data in the "three_band.zip" into the Data/three_band folder.
-3. Extract the data in the "sixteen_band.zip" into the  Data/sixteen_band folders.
-4. Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the Data folder.
+2. Extract the data in the "three_band.zip" into the ```Data/three_band``` folder.
+3. Extract the data in the "sixteen_band.zip" into the  ```Data/sixteen_band``` folders.
+4. Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the ```Data``` folder.
 
 # Project Flow Chart
 ![Flow Chart](/Images/project_flow_chart.png)
@@ -76,7 +76,7 @@ concatenates (joins) the deeper layers of the right arm with the earlier layers 
 "What" and the "Where" information - two questions that are essential to image segmentation.
 
 ## Train from Scratch 
-In the Data_masks/Road folder segregate the pictures into training and testing. Place "6100_2_2_Road.tif" and "6140_3_1_Road.tif" 
+In the ```Data_masks/Road``` folder segregate the pictures into training and testing. Place "6100_2_2_Road.tif" and "6140_3_1_Road.tif" 
 in the test folder. Now delete all the other images except for "6070_2_3_Road.tif", "6100_1_3_Road.tif", "6100_2_3_Road.tif", "6110_1_2_Road.tif", "6110_3_1_Road.tif", "6110_4_0_Road.tif", "6120_2_2_Road.tif" and "6140_1_2_Road.tif" as they are the only images that have roads in them.
 
 ### Run Commands (Essential)
@@ -97,7 +97,7 @@ python test_roads.py
 ```
 
 ## Use Pre-trained Weights
-Download my pretrained weights from this [link](https://drive.google.com/drive/folders/1YGMZVCRn5UVlQL3V-MTwT4QHtI7HJJSX?usp=sharing). Place the weights in the ```Parameters/Road_tar``` folder.
+Download my pretrained weights from this [link](https://drive.google.com/drive/folders/1YGMZVCRn5UVlQL3V-MTwT4QHtI7HJJSX?usp=sharing). Place the weights in the ```Parameters/Road_tar``` folder. Please modify the first line of the ```checkpoint``` file so that your my absolute path is replaced by your absolute path.
 
 To test the U-Net model on the test images, run the below command.
 ```python
@@ -105,6 +105,12 @@ python test_roads.py
 ```
 
 ## Results from Pre-trained Weights
+We measure the our perform by the **Jaccard Metric**. For tarred roads, we achieve a high Jaccard score of **0.6**.
+
+<p align="middle">
+  <img src="/Images/Road_Input.png" width="100" />
+  <img src="/Images/Road_Output.png" width="100" /> 
+</p>
 
 
 # Segmenting Water bodies
@@ -113,7 +119,7 @@ python test_roads.py
 Because of the lack of data for water bodies, deep learning models would not converge on training. Hence we resorted to using an ensemble of machine learning models.
 
 ## Train from Scratch
-In the Data_masks/Fast_H20 folder segregate the pictures into training and testing. Place "6070_2_3_Fast_H20.tif" in the Data_masks/Fast_H20/Test
+In the ```Data_masks/Fast_H20``` folder segregate the pictures into training and testing. Place "6070_2_3_Fast_H20.tif" in the ```Data_masks/Fast_H20/Test```
 folder and keep "6100_2_2_Fast_H20.tif" as is. Delete the rest, as all other images do not have large water bodies in them.
 
 ### Run Commands (Essential)
