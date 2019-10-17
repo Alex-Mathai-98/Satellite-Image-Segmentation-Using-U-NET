@@ -61,10 +61,19 @@ python mask_creator.py
 ```
 
 # Segmenting Roads
-You can either use my **Pretrained Weights** to predict tarred roads from satellite images or you can **train from scratch**.
+You can either use my **Pre-trained Weights** to predict tarred roads from satellite images or you can **Train from Scratch**.
 
 ## Architecture
 ![U-Net](/Images/U-Net.png)
+
+### Explanation (Optional)
+The architecure used for this project is a deep U-Net model. In vanilla CNNs, the prediction of the deeper layers contain more semantic information, whereas the predictions from the earlier layers contain more spatial information. In simpler terms, the deeper layers answer the
+question "What?", whereas the earlier layers answer the question "Where?" (Note that as we go from left to right we are in fact
+going deeper into the network). This network however tries to combine both of these predictions through the red channels. The
+left arm of the "U" contains the earlier layers that answer the question "Where in this picture?" whereas the right arm contains
+the deeper layers that answer the question "What is this picture?”. It is pretty evident from the diagram, that the network
+concatenates (joins) the deeper layers of the right arm with the earlier layers of the left arm. In doing so, it tries to merge the
+"What" and the "Where" information - two questions that are essential to image segmentation.
 
 ## Train from Scratch 
 In the Data_masks/Road folder segregate the pictures into training and testing. Place "6100_2_2_Road.tif" and "6140_3_1_Road.tif" 
