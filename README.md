@@ -24,7 +24,9 @@ Most images that we capture on phones are made of 3-Bands - red, green and blue 
 4. Extract the data in the "grid_sizes.csv.zip" and "train_wkt_v4.csv.zip" in the ```Data``` folder.
 
 # Project Flow Chart
-![Flow Chart](/Images/project_flow_chart.png)
+<p align="middle">
+  <img src="/Images/project_flow_chart.png" width="300" />
+</p>
 
 # Preprocessing
 Navigate to the main folder where all the scripts exist. 
@@ -117,7 +119,9 @@ We measure our performance by the **Jaccard Metric**. For tarred roads, we achie
 Because of the lack of data for water bodies, deep learning models failed to converge on training. Hence we resorted to using an ensemble of machine learning models. 
 
 ## Architecture
-![Ensemble](/Images/ensemble.png)
+<p align="middle">
+  <img src="/Images/ensemble.png" width="300" />
+</p>
 
 ## Train from Scratch
 In the ```Data_masks/Fast_H20``` folder segregate the pictures into training and testing. Place "6070_2_3_Fast_H20.tif" in the ```Data_masks/Fast_H20/Test```
