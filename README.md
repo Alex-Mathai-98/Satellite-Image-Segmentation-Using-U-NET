@@ -108,8 +108,8 @@ python test_roads.py
 We measure our performance by the **Jaccard Metric**. For tarred roads, we achieve a high Jaccard score of **0.6**.
 
 <p align="middle">
-  <img src="/Images/Road_Input.png" width="400" hspace="50" />
-  <img src="/Images/Road_Output.png" width="400" /> 
+  <img src="/Images/Road_Input.png" width="350" hspace="50" />
+  <img src="/Images/Road_Output.png" width="350" /> 
 </p>
 
 
