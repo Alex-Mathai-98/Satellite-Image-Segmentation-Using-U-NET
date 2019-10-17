@@ -144,7 +144,7 @@ To test the ensemble model on the test images run the below command.
 ```
 
 ## Use Pre-trained Weights
-Download my pretrained weights from this link. Place the weights here.
+Download my pretrained weights from this [link](https://drive.google.com/drive/folders/173-JAXabZmhCojRN_3UQK5VJPjVjAnwB?usp=sharing). Place the weights in the ```Parameters/Fast_H20``` folder.
 
 To test the ensemble model on the test images run the below command.
 ```python
