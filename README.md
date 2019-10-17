@@ -105,18 +105,19 @@ python test_roads.py
 ```
 
 ## Results from Pre-trained Weights
-We measure the our perform by the **Jaccard Metric**. For tarred roads, we achieve a high Jaccard score of **0.6**.
+We measure our performance by the **Jaccard Metric**. For tarred roads, we achieve a high Jaccard score of **0.6**.
 
 <p align="middle">
-  <img src="/Images/Road_Input.png" width="400" />
-  <img src="/Images/Road_Output.png" width="400" /> 
+  <img src="/Images/Road_Input.png" width="400" padding-right="25" />
+  <img src="/Images/Road_Output.png" width="400" padding-left="25" /> 
 </p>
 
 
 # Segmenting Water bodies
+Because of the lack of data for water bodies, deep learning models failed to converge on training. Hence we resorted to using an ensemble of machine learning models. 
 
 ## Architecture
-Because of the lack of data for water bodies, deep learning models would not converge on training. Hence we resorted to using an ensemble of machine learning models.
+
 
 ## Train from Scratch
 In the ```Data_masks/Fast_H20``` folder segregate the pictures into training and testing. Place "6070_2_3_Fast_H20.tif" in the ```Data_masks/Fast_H20/Test```
