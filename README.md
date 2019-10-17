@@ -25,7 +25,7 @@ Most images that we capture on phones are made of 3-Bands - red, green and blue 
 
 # Project Flow Chart
 <p align="middle">
-  <img src="/Images/project_flow_chart.png" width="300" />
+  <img src="/Images/project_flow_chart.png" width="600" />
 </p>
 
 # Preprocessing
@@ -120,7 +120,7 @@ Because of the lack of data for water bodies, deep learning models failed to con
 
 ## Architecture
 <p align="middle">
-  <img src="/Images/ensemble.png" width="300" />
+  <img src="/Images/ensemble.png" width="600" />
 </p>
 
 ## Train from Scratch
