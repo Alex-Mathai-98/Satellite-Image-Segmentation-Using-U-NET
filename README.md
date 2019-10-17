@@ -64,7 +64,7 @@ python mask_creator.py
 You can either use my **Pretrained Weights** to predict tarred roads from satellite images or you can **train from scratch**.
 
 ## Architecture
-![U-Net](/Images/U_Net.png)
+![U-Net](/Images/U-Net.png)
 
 ## Train from Scratch 
 In the Data_masks/Road folder segregate the pictures into training and testing. Place "6100_2_2_Road.tif" and "6140_3_1_Road.tif" 
