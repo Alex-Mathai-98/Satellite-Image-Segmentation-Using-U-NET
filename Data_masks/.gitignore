@@ -1,1 +1,13 @@
-Road_and_Track
+Bldg/*.tif
+Car/*.tif
+Crops/*.tif
+Fast_H20/Test/*.tif
+Fast_H20/*.tif
+Road/Test/*.tif
+Road/*.tif
+Slow_H20/*.tif
+Struct/*.tif
+Track/Test/*.tif
+Track/*.tif
+Trees/*.tif
+Truck/*.tif
