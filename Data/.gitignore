@@ -1,1 +1,9 @@
 image_stacks/*.tif
+pan_sharpened_images/*.tif
+sixteen_band/*.tif
+three_band/*.tif
+grid_sizes.csv
+grid_sizes.csv.zip
+three_band.zip
+train_wkt_v4.csv
+train_wkt_v4.csv.zip
