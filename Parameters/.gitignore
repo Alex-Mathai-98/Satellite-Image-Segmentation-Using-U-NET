@@ -1,10 +1,13 @@
 # Ignore everything in this directory
 Bldg
-Road_and_Track
+Bldg2
+Fast_H20/*
 Road
 Road2
-Tensorboard
-Track
-Trees5
-Bldg2
+Road_and_Track
+Road_tar/*
+Tensorboard/*
+Track/*
+Trees5/*
+
 
